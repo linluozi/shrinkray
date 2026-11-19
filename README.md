@@ -21,7 +21,7 @@ refuses to call a result minimal unless it has checked every single-element dele
 git clone git@github-linluozi:linluozi/shrinkray.git
 cd shrinkray
 python3 -m venv .venv
-.venv/bin/pip install -e .
+.venv/bin/pip install -e '.[test]'
 ```
 
 Python ≥ 3.9, standard library only. The CLI is then available as `.venv/bin/shrinkray` or
@@ -105,6 +105,7 @@ finds a removable element.
 ## Tests
 
 ```bash
+.venv/bin/pip install -e '.[test]'
 .venv/bin/python -m pytest -q
 ```
 
